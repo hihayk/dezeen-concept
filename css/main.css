@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Graphik-Regular;
+  font-size: 15px;
+  color: #000000;
+  line-height: 22px;
+  padding-top: 64px; }
+
+img {
+  max-width: 100%; }
+
+.main-logo-section {
+  max-width: 1152px;
+  margin: 0 auto;
+  margin-bottom: -36px;
+  margin-top: 32px; }
+
+.main-logo {
+  transition: .4s; }
+
+.scrolled .main-logo {
+  opacity: 0;
+  transform: translateY(-48px); }
+
+.article-container {
+  max-width: 640px;
+  margin: 0 auto; }
+
+.article-title {
+  font-family: FoundersGrotesk-Bold;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 16px; }
+
+.article-meta-section {
+  margin-bottom: 24px;
+  opacity: .5; }
+
+.main-meta {
+  font-weight: 600; }
+
+.article-img-expanded-wrapper {
+  margin-left: -128px;
+  margin-right: -128px; }
+
+.article-img-left {
+  width: calc(50% + 128px);
+  margin-left: -128px;
+  display: inline-block;
+  float: left;
+  margin-right: 32px; }
+
+.mb-1 {
+  margin-bottom: 8px; }
+
+.mb-2 {
+  margin-bottom: 16px; }
+
+.mb-3 {
+  margin-bottom: 24px; }
+
+.mb-4 {
+  margin-bottom: 32px; }
+
+.mb-5 {
+  margin-bottom: 40px; }
+
+.mb-6 {
+  margin-bottom: 48px; }
+
+.mb-7 {
+  margin-bottom: 56px; }
+
+.mb-8 {
+  margin-bottom: 64px; }
+
+.main-menu {
+  display: flex;
+  transform: translateX(-128px);
+  transition: .4s; }
+
+.scrolled .main-menu {
+  transform: translateX(0); }
+
+.main-header {
+  border-bottom: 1px solid #E50000;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  max-width: 1152px;
+  margin: 0 auto; }
+
+.main-header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100; }
+
+.main-menu-item {
+  position: relative;
+  color: rgba(0, 0, 0, 0.5); }
+  .main-menu-item:not(:last-child) {
+    margin-right: 20px; }
+  .main-menu-item.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E50000; }
+
+.main-header-search-section {
+  margin-left: auto; }
+
+.main-header-logo-section {
+  width: 128px; }
+
+.main-logo-sm {
+  position: relative;
+  top: -4px;
+  opacity: 0;
+  transition: .4s;
+  transform: translateX(-100%); }
+
+.scrolled .main-logo-sm {
+  opacity: 1;
+  transform: translateX(0px); }

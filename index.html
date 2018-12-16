@@ -1,0 +1,67 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body id="body">
+    <div class="global-container mb-8">
+      <div class="main-header-container">
+        <div class="main-header">
+          <div class="main-header-logo-section"><img src="images/logo-sm.svg" class="main-logo-sm"/></div>
+          <div class="main-header-menu-section">
+            <div class="main-menu">
+              <div class="main-menu-item">Magazine</div>
+              <div class="main-menu-item">Jobs</div>
+              <div class="main-menu-item">Hot List</div>
+              <div class="main-menu-item active">Architecture</div>
+              <div class="main-menu-item">Interiors</div>
+              <div class="main-menu-item">Design</div>
+              <div class="main-menu-item">Technology</div>
+              <div class="main-menu-item">Movies</div>
+              <div class="main-menu-item">Comments</div>
+            </div>
+          </div>
+          <div class="main-header-search-section">
+            <div class="main-menu-item">Search</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-logo-section"><img src="images/logo.svg" class="main-logo"/></div>
+      <div class="article-section">
+        <div class="article-container">
+          <div class="article-meta-section">
+            <div class="main-meta">Bridget Cogley | 17 September 2017</div>5 comments
+          </div>
+          <div class="article-title">Expansive deck divides levels of Canadian cliffside house by Alain Carle</div>
+          <div class="mb-4">Canadian firm Alain Carle Architecte has built a sustainable house in the mountains of Quebec as a retreat from modern conveniences. La Héronnière by Alain Carle Located in the Laurentian Mountains, La Héronnière sits atop large rocks overlooking a forest. The clients chose the site based on the natural surroundings.</div>
+          <div class="article-img-expanded-wrapper"><img src="images/article-1.png" class="article-img-expanded mb-4"/></div>
+          <div class="mb-4">Polished concrete floors, black accessories, and other cool-toned furnishings decorate the interior. To add warmth, ceilings are clad in a blonde wood and a large carpet covers the floors. Stairs off the kitchen lead to a below-grade nook with a high-top eating and work table running along a glazed wall. A green house, office, storage unit and audio-recording room are also located in the lower section.</div><img src="images/article-2.png" class="article-img-left mb-4"/>
+          <div class="mb-1">On top, the black-clad structure accommodates a den, master suite, guest bedroom and bathroom, with a separate biomass system to the west with a solar-powered roof. Underneath, an open-plan living room and kitchen are divided by a dining table. "The house has been designed to be able to function almost completely autonomously," said studio founder Alain Carle. </div>
+          <div>A large part of the home's energy comes from photovoltaic panels. Neighbouring pines protect the house from wind. "Exempt from a magnetic field or wireless devices, the house reflects the owners' desire to occupy a harmonious and 'symbiotic' way where the site is perceived as the 'host'," Carle said.</div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("body");
+      function add_class_on_scroll() {
+          header.classList.add("scrolled");
+      }
+      function remove_class_on_scroll() {
+          header.classList.remove("scrolled");
+      }
+      window.addEventListener('scroll', function(){ 
+          //Here you forgot to update the value
+          scrollpos = window.scrollY;
+          if(scrollpos > 60){
+              add_class_on_scroll();
+          }
+          else {
+              remove_class_on_scroll();
+          }
+          console.log(scrollpos);
+      });
+    </script>
+  </body>
+</html>
